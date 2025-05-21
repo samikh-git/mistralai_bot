@@ -2,7 +2,7 @@ import praw
 import os
 from mistralai import Mistral
 
-#Reddit bot that answers questions on a selected subreddit
+#Reddit bot that answers questions on a selected subreddit (defualt = "AskReddit")
 
 api_key = os.environ["MISTRAL_API_KEY"]
 model = "mistral-large-latest"
@@ -22,7 +22,7 @@ reddit = praw.Reddit(
 )
 
 QUESTIONS = ["what is", "who is", "what are"]
-REPLY_TEMPLATE = f"Hi! I am u/mistralai_bot a Reddit bot that can answer your questions using Mistral AI. \n"
+REPLY_TEMPLATE = "Hi! I am u/mistralai_bot a Reddit bot that can answer your questions using Mistral AI. \n"
 
 def main(subreddit_name = "AskReddit"):
     """ Main function that goes runs the bot. Finds first applicable post and then asks to proceed."""
