@@ -5,7 +5,7 @@
 <p> To use these bots, you simply need to run the <code>bot.py</code> file and call the <code>main</code> function. This should then run the bot until it finds the first post to reply to. It will ask if you wish to proceed and find another post for which you want it to answer.</p>
 
 <p>Here is a rundown of the execution of the Reddit bot.</p>
-<pre><code class="language-bash"> python bot.py
+<pre><code class="language-bash"> python -i bot.py
         >>> main(subreddit="AskReddit")
         "Sample answer"
         Do you wish to procced? [yes]/[no] no
