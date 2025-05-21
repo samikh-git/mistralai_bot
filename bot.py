@@ -22,7 +22,7 @@ reddit = praw.Reddit(
 )
 
 QUESTIONS = ["what is", "who is", "what are"]
-REPLY_TEMPLATE = f"Hi! I am u/mistralai_bot a Reddit bot that can answer your questions using the Mistral API. \n"
+REPLY_TEMPLATE = f"Hi! I am u/mistralai_bot a Reddit bot that can answer your questions using Mistral AI. \n"
 
 def main(subreddit_name = "AskReddit"):
     """ Main function that goes runs the bot. Finds first applicable post and then asks to proceed."""
